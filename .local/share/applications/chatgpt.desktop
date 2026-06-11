@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ChatGPT
+GenericName=AI assistant
+Comment=Open ChatGPT as a web app
+Exec=chromium --app=https://chatgpt.com
+Icon=chromium
+Terminal=false
+Categories=Network;Office;
+Type=Application

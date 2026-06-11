@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+notify-send "Now" "$(date '+%A, %d %B %Y %H:%M')"

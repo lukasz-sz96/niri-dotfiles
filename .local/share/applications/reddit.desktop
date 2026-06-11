@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Reddit
+GenericName=Social news
+Comment=Open Reddit as a web app
+Exec=chromium --app=https://www.reddit.com
+Icon=chromium
+Terminal=false
+Categories=Network;
+Type=Application

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Localhost 3000
+GenericName=Local web app
+Comment=Open localhost:3000 as a web app
+Exec=chromium --app=http://localhost:3000
+Icon=chromium
+Terminal=false
+Categories=Development;Network;
+Type=Application

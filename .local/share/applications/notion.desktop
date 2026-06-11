@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Notion
+GenericName=Workspace
+Comment=Open Notion as a web app
+Exec=chromium --app=https://www.notion.so
+Icon=chromium
+Terminal=false
+Categories=Network;Office;
+Type=Application

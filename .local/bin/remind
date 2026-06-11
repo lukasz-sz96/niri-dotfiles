@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+if [ "$#" -lt 2 ]; then
+    echo "usage: remind <delay> <message...>"
+    echo "example: remind 20m stretch"
+    exit 1
+fi
+
+delay="$1"
+shift
+message="$*"
+unit="reminder-$(date +%s)"
+
+systemd-run --user --quiet --unit="$unit" --on-active="$delay" \
+    /usr/bin/notify-send "Reminder" "$message"

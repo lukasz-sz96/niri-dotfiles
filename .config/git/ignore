@@ -1,0 +1,10 @@
+.direnv/
+.envrc.local
+.DS_Store
+node_modules/
+dist/
+build/
+.turbo/
+.next/
+.nuxt/
+coverage/

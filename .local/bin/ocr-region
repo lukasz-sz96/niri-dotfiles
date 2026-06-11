@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+image="$(mktemp --suffix=.png)"
+trap 'rm -f "$image"' EXIT
+
+geometry="$(slurp)" || exit 0
+grim -g "$geometry" "$image"
+
+text="$(tesseract "$image" stdout --psm 6 2>/dev/null | sed '/^[[:space:]]*$/d')"
+if [ -n "$text" ]; then
+    printf '%s' "$text" | wl-copy
+    notify-send "OCR copied" "Recognized text is in the clipboard."
+else
+    notify-send "OCR empty" "No text was recognized in the selected region."
+fi

@@ -1,0 +1,61 @@
+blur {
+    passes 3
+    offset 5.0
+    noise 0.04
+    saturation 1.8
+}
+
+window-rule {
+    background-effect {
+        blur true
+        xray true
+        noise 0.05
+        saturation 2.4
+    }
+}
+
+layer-rule {
+    match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel)$"
+    background-effect {
+        blur true
+        xray false
+        noise 0.05
+        saturation 2.6
+    }
+}
+
+layer-rule {
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
+}
+
+window-rule {
+    geometry-corner-radius 18
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id="^zen$"
+    match app-id="^zen-browser$"
+    match app-id="^firefox$"
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="^steam$"
+    match app-id="^Steam$"
+    match app-id="^com\\.heroicgameslauncher\\.hgl$"
+    match app-id="^net\\.lutris\\.Lutris$"
+    variable-refresh-rate true
+}
+
+window-rule {
+    match title="^(Open|Save|Save As|Open File|Choose File|Select File|File Upload|Preferences|Settings)$"
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { fixed 720; }
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}

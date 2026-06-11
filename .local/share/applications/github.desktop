@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GitHub
+GenericName=Code hosting
+Comment=Open GitHub as a web app
+Exec=chromium --app=https://github.com
+Icon=chromium
+Terminal=false
+Categories=Development;Network;
+Type=Application
