@@ -10,4 +10,5 @@ input {
         natural-scroll
         disabled-on-external-mouse
     }
+    trackpoint {}
 }

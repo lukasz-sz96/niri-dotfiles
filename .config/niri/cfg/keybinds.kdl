@@ -14,6 +14,8 @@ binds {
     Mod+Comma { spawn "noctalia" "msg" "settings-toggle"; }
     Mod+Shift+W { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
     Mod+Ctrl+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Ctrl+Comma { spawn "noctalia" "msg" "media" "previous"; }
+    Mod+Ctrl+Period { spawn "noctalia" "msg" "media" "next"; }
     Mod+N { spawn "noctalia" "msg" "notification-clear-active"; }
     Mod+Shift+N { spawn "noctalia" "msg" "notification-dnd-toggle"; }
     Mod+Ctrl+Shift+Space { spawn "noctalia" "msg" "theme-mode-toggle"; }

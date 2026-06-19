@@ -1,15 +1,31 @@
 layout {
-    gaps 28
+    gaps 25
     center-focused-column "never"
+    background-color "transparent"
 
     focus-ring {
-        width 4
+        width 1.5
         active-color "#7fc8ff"
-        inactive-color "#505050"
+        inactive-color "transparent"
     }
 
     border {
         off
+        width 1.5
+    }
+
+    shadow {
+      off
+      softness 30
+      spread 5
+      offset x=0 y=5
+      color "#0007"
+    }
+
+    struts {
+      left 28
+      right 28
+      bottom 28
     }
 
     preset-column-widths {
